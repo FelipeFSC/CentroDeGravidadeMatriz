@@ -1,3 +1,8 @@
+/*
+    Felipe Ferreira dos Santos Cruz.
+    Jady Cardoso de Queiroz.
+*/
+
 package centrodegravidade;
 
 import java.io.BufferedReader;
@@ -36,7 +41,9 @@ public class CentroDeGravidade {
         return mt;
     }
     
+    // Metodo auxiliar para somar as linhas da matriz.
     public static double[] somaDasLinhas( double mt[][] ){
+        // Criando um vetor com a quantidade de Linhas da Matriz.
         double linha[] = new double[mt.length];
         
         for( int i = 0; i < mt.length; i++ ){
@@ -47,7 +54,9 @@ public class CentroDeGravidade {
 
         return linha;
     }
+    // Metodo auxiliar para somar as colunas da matriz.
     public static double[] somaDasColunas( double mt[][] ){
+        // Criando um vetor com a quantidade de Colunas da Matriz.
         double coluna[] = new double[ mt[1].length ];
 
         for( int i = 0; i < mt[1].length; i++ ){
